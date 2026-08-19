@@ -13,9 +13,9 @@ async function showpet() {
             card.classList.add("pet-card");
             card.innerHTML = `
   <h3>name: ${pet.name}</h3>
-  <p>Flavor: ${pet.type}</p>
-  <p>Price: ${pet.color}</p>
-  <p>Price: ${pet.description}</p>
+  <p>type: ${pet.type}</p>
+  <p>color: ${pet.color}</p>
+  <p>Description: ${pet.description}</p>
   <button type=button class="Delete">Delete</button>`; 
   const deleteButton = card.querySelector(".Delete");
   deleteButton.addEventListener("click",() => {Deletepet(pet.id, card)});
