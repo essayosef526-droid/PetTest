@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Magical Pet Sanctuary Manager</title>
+
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Magical Pet Sanctuary Manager</h1>
+      
+    </header>
+
+    <main class="main-container">
+      <section class="form-section">
+        <h2>Adopt a new pet</h2>
+
+        <form id="petForm">
+          <input type="hidden" id="petId" />
+
+          <div class="form-group">
+            <label for="name">Pet Name</label>
+
+            <input
+              type="text"
+              id="name"
+              placeholder="enter the pet name "
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="Pet Type">Pet Type</label>
+
+            <input
+              type="text"
+              id="Pet-Type"
+              placeholder="enter the pet type"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="Color">Color</label>
+
+            <input
+              type="text"
+              id="Color"
+              placeholder="enter the pet Color"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="Description">Description</label>
+
+            <input
+              type="text"
+              id="Description"
+              placeholder="Example: Black"
+              required
+            />
+          </div>
+
+       
+
+          <button type="submit" id="submitButton">Add New Pet</button>
+        </form>
+      </section>
+
+      <section class="products-section">
+        <h2>Available Pets</h2>
+
+        <p id="loadingMessage">Loading the New Pet</p>
+
+        <div id="petContainer" class="pet-container"></div>
+      </section>
+    </main>
+   
+    <script src="app.js"></script>
+  </body>
+</html>
